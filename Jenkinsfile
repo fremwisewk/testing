@@ -1,16 +1,22 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent {
-        label 'windows'
-    }
+    
+    agent none
+    
     stages {
         stage('Build') {
+            agent {
+                label 'windows'
+            }
             steps {
                 echo 'Building..'
             }
         }
         stage('Test') {
+            agent {
+                label 'windows'
+            }
             steps {
                 echo 'Testing..'
             }
