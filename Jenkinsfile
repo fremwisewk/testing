@@ -5,6 +5,7 @@ pipeline {
         label 'windows'
     }
 
+    echo 'good morning ${username}'
     stages {
         stage('Build') {
             steps {
