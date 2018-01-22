@@ -2,7 +2,7 @@
 
 pipeline {
     agent {
-        label 'fake_unix'
+        label 'windows'
     }
     stages {
         stage('Build') {
