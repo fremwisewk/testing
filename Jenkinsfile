@@ -1,7 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent none
+    agent {
+        label 'fake_unix'
+    }
     stages {
         stage('Build') {
             steps {
