@@ -7,27 +7,27 @@ pipeline {
     stages {
         
         stage('Build') {
-            agent {
-                label 'windows'
-            }
+            //agent {
+            //    label 'windows'
+            //}
             steps {
                 echo 'Building..'
             }
         }
         
         stage('Test') {
-            agent {
-                label 'windows'
-            }
+            //agent {
+            //    label 'windows'
+            //}
             steps {
                 echo 'Testing..'
             }
         }
         
         stage('Deploy') {
-            agent {
-                label 'unix'
-            }
+            //agent {
+            //    label 'unix'
+            //}
             steps {
                 echo 'Deploying_Testing'
             }
