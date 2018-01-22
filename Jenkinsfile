@@ -25,6 +25,9 @@ pipeline {
         }
         
         stage('Deploy') {
+            agent {
+                label 'unix'
+            }
             steps {
                 echo 'Deploying_Testing'
             }
