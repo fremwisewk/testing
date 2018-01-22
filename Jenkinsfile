@@ -5,6 +5,7 @@ pipeline {
     agent none
     
     stages {
+        
         stage('Build') {
             agent {
                 label 'windows'
@@ -13,6 +14,7 @@ pipeline {
                 echo 'Building..'
             }
         }
+        
         stage('Test') {
             agent {
                 label 'windows'
@@ -21,9 +23,10 @@ pipeline {
                 echo 'Testing..'
             }
         }
+        
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying_Testing'
             }
         }
     }
